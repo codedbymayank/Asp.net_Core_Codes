@@ -1,0 +1,56 @@
+Lecture - ( What's Asp.net Core ) 
+
+What's dotnet core ?
+-> dotnet core is an opensource and cross platform framework which is used for building serveral types of application
+-> with the help of it we can develop web applications , desktop , gaming apps etc .
+-> It also have CLI support 
+-> For package management we use nuget package manager 
+-> using cli :- dotnet new mvc --name someapp  [ mvc is template and it can be anything ]
+-> to run using cli :- dotnet run
+
+Lecture - ( What's MVC Pattern )
+-> Model View Controller 
+-> It's an architectural design pattern means this design pattern is used at the architectural level of an application
+-> Model View Controller are the main components of mvc design pattern 
+
+Role of model , view & controller 
+-> model is responsible for data
+-> view is responsible for ui
+-> controller is responsible for the flow of application by accepting user input
+
+Controller :-
+-> A controller is .cs file which have some methods calls action methods
+-> when a request comes to controller , at that time it actually hits a method 
+-> Now everything depends on that method , whatever it will going to return 
+
+Model :-
+-> A model is asp.net core is simple class which have only some properties and those are autoimplemented 
+-> model is just used to pass data from controller to view and viceversa
+
+View :-
+-> A view is a combination of html & C# 
+-> Extension of view file is .cshtml
+-> When a view is rendered on browser at that time c# code will also convert into html and because only html code is visible on browser 
+
+Benefits Of MVC :-
+-> Sepration of concern
+-> Each component have its specific job , because of which debugging is get easy 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
