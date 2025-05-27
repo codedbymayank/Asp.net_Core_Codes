@@ -36,6 +36,27 @@ Benefits Of MVC :-
 -> Sepration of concern
 -> Each component have its specific job , because of which debugging is get easy 
 
+Note :- Asp.net core is a part of dotnet core framework . Dotnet core framework used in console app and asp.net core used for web app 
+
+
+Lecture - ( Convert console into web app ) 
+-> By default every web application is a console application in dotnet core 
+-> When we add some features into a console app , then it turns into web application
+-> After installing dotnet core framework , at that time asp.net core framework will automatically installed 
+
+Steps to convert console app into web app :-
+-> update sdk in .csproj file ( for opening csproj just edit project file )
+-> update output type in .csproj file
+-> Add new webhostbuilder ( Webhostbuilder will convert any console app into web app )
+-> Add routing for http calls
+-> setup default route 
+
+What is Host ?
+-> It's an object which encapsulate the resource of an application like dependency injection , logging , configuration
+
+Note :- In asp.net framework we have to use third party tool for DI , but in dotnet core it's inbuilt because of hostbuilder
+
+
 
 
 
