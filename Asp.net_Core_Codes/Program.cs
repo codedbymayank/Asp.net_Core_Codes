@@ -18,6 +18,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//For creating custom middleware 
+//We are using async because asp.net core works on async programming
+//app.Use( async (context, next) =>
+//{
+//    await context.Response.WriteAsync("First Custom Middleware");
+      /*
+       For calling next middleware and using await because of async 
+       await next();
+       */
+      
+//});
+
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
