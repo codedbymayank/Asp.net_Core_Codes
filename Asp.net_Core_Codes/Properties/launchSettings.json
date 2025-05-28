@@ -4,6 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
+      //When code is running on issespress then this port will work otherwise which is of project 
       "applicationUrl": "http://localhost:64965",
       "sslPort": 44309
     }

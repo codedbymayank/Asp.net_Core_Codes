@@ -27,3 +27,4 @@ C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8
 C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.pdb
 C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.genruntimeconfig.cache
 C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\ref\Asp.net_Core_Codes.dll
+C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.sourcelink.json
