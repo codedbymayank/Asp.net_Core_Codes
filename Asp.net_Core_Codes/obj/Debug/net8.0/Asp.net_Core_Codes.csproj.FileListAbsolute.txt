@@ -1,30 +1,30 @@
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\appsettings.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.staticwebassets.runtime.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.staticwebassets.endpoints.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.exe
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.deps.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.runtimeconfig.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.dll
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.pdb
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.AssemblyInfoInputs.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.AssemblyInfo.cs
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.csproj.CoreCompileInputs.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.RazorAssemblyInfo.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.RazorAssemblyInfo.cs
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\bundle\Asp.net_Core_Codes.styles.css
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\projectbundle\Asp.net_Core_Codes.bundle.scp.css
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.json.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.dll
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\refint\Asp.net_Core_Codes.dll
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.pdb
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.genruntimeconfig.cache
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\ref\Asp.net_Core_Codes.dll
-C:\Users\Mayank Pal\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.sourcelink.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\appsettings.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.staticwebassets.runtime.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.staticwebassets.endpoints.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.exe
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.deps.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.runtimeconfig.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.dll
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\bin\Debug\net8.0\Asp.net_Core_Codes.pdb
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.AssemblyInfoInputs.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.AssemblyInfo.cs
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.csproj.CoreCompileInputs.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.RazorAssemblyInfo.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.RazorAssemblyInfo.cs
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.sourcelink.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\bundle\Asp.net_Core_Codes.styles.css
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\scopedcss\projectbundle\Asp.net_Core_Codes.bundle.scp.css
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.dll
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\refint\Asp.net_Core_Codes.dll
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.pdb
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\Asp.net_Core_Codes.genruntimeconfig.cache
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\ref\Asp.net_Core_Codes.dll
+C:\Users\Mayank\Desktop\Asp.net_Core_Codes\Asp.net_Core_Codes\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

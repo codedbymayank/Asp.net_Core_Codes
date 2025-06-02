@@ -16,7 +16,20 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+//after this mcs will addedd to an application , we can use model , views & controllers and lots of other features 
+//builder.Services.AddMvc();
+
+//This is for when we only need controllers & models
+//builder.Services.AddControllers();
+
+//When we only want use controllers with views 
+//builder.Services.AddControllersWithViews();
+
+
 app.UseRouting();
+
+//For default controller route :- to map route our default home controller and default index method 
+app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
 
 //For creating custom middleware 
 //We are using async because asp.net core works on async programming
@@ -31,10 +44,12 @@ app.UseRouting();
 //});
 
 
+
+
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
