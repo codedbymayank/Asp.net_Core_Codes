@@ -1,0 +1,9 @@
+﻿namespace Asp.net_Core_Codes.Models
+{
+    public class BookModel
+    {
+        public int Bookno { get; set; }
+        public string BookTitle { get; set; }
+        public string BookAuthor { get; set; }
+    }
+}
