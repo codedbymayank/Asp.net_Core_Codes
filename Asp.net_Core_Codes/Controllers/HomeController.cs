@@ -20,6 +20,7 @@ namespace Asp.net_Core_Codes.Controllers
             return View("TempView/tempview.cshtml");
             //for relative path
             //return View("../../TempView/tempview");
+            
 
         }
     }
