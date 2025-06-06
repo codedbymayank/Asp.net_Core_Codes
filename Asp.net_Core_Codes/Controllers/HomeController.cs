@@ -8,5 +8,10 @@ namespace Asp.net_Core_Codes.Controllers
         {
             return "Welcome Back";
         }
+
+        public ViewResult Myname()
+        {
+            return View();
+        }
     }
 }

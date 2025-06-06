@@ -13,10 +13,10 @@ namespace Asp.net_Core_Codes.Controllers
         {
             _bookrepo = new BookRepository();
         }
-        public List<BookModel> GetAllBookData()
+        public ViewResult GetAllBookData()
         {
             var getallbookdata = _bookrepo.GetAllBooks().ToList();
-            return getallbookdata;
+            return View();
         }
         public BookModel GetAllBookDataById(int id)
         {
