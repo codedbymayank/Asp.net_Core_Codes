@@ -50,10 +50,10 @@ namespace Asp.net_Core_Codes.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){Bookno=10 , BookTitle="T1" , BookAuthor="A1"},
-                new BookModel(){Bookno=11 , BookTitle="T2" , BookAuthor="A2"},
-                new BookModel(){Bookno=12 , BookTitle="T3" , BookAuthor="A3"},
-                new BookModel(){Bookno=13 , BookTitle="T4" , BookAuthor="A4"},
+                new BookModel(){Bookno=10 , Bookdesc="Book D1" , BookTitle="T1" , BookAuthor="A1"},
+                new BookModel(){Bookno=11 , Bookdesc="Book D2" , BookTitle="T2" , BookAuthor="A2"},
+                new BookModel(){Bookno=12, Bookdesc="Book D3" ,BookTitle="T3" , BookAuthor="A3"},
+                new BookModel(){Bookno=13 , Bookdesc="Book D4" , BookTitle="T4" , BookAuthor="A4"},
 
             };
         }
