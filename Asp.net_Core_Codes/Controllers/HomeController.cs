@@ -4,9 +4,9 @@ namespace Asp.net_Core_Codes.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Welcome Back";
+            return View();
         }
 
         public ViewResult Myname()
