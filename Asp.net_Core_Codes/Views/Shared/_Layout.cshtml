@@ -29,5 +29,8 @@
         @RenderBody()
     </main>
    
+    <script src="~/lib/jquery/jquery.js"></script>
+    @*After adding required false  , itd doesn't find a section on every view page where this layout is using , if it finds then ok and if not then also*@
+    @RenderSection("jquerysec" , required:false);
 </body>
 </html>
