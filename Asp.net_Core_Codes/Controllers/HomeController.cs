@@ -4,11 +4,7 @@ namespace Asp.net_Core_Codes.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
-        {
-            return View();
-        }
-
+      
         public ViewResult Myname()
         {
             return View("Index");
@@ -23,5 +19,21 @@ namespace Asp.net_Core_Codes.Controllers
             
 
         }
+
+
+        public ViewResult Index()
+        {
+            return View();
+        }
+        public ViewResult About()
+        {
+            return View();
+        }
+
+        public ViewResult Contact()
+        {
+            return View();
+        }
+
     }
 }
