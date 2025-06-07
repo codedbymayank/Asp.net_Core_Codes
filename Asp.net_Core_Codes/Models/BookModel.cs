@@ -6,5 +6,8 @@
         public string Bookdesc { get; set; }
         public string BookTitle { get; set; }
         public string BookAuthor { get; set; }
+        public string Action { get; set; }
+        public int NoOfPages { get; set; }
+        public string BookLanaguage { get; set; }
     }
 }

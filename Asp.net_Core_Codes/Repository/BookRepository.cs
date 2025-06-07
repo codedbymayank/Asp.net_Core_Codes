@@ -50,10 +50,16 @@ namespace Asp.net_Core_Codes.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){Bookno=10 , Bookdesc="Book D1" , BookTitle="T1" , BookAuthor="A1"},
-                new BookModel(){Bookno=11 , Bookdesc="Book D2" , BookTitle="T2" , BookAuthor="A2"},
-                new BookModel(){Bookno=12, Bookdesc="Book D3" ,BookTitle="T3" , BookAuthor="A3"},
-                new BookModel(){Bookno=13 , Bookdesc="Book D4" , BookTitle="T4" , BookAuthor="A4"},
+            new BookModel(){ Bookno = 101, Bookdesc = "A thrilling mystery novel set in Victorian London.", BookTitle = "The Shadow in the Fog", BookAuthor = "Arthur W. Blake", Action = "Available", NoOfPages = 320, BookLanaguage = "English" },
+new BookModel(){ Bookno = 102, Bookdesc = "An inspiring tale of resilience during World War II.", BookTitle = "Winds of Courage", BookAuthor = "Emily Hartman", Action = "Checked Out", NoOfPages = 280, BookLanaguage = "English" },
+new BookModel(){ Bookno = 103, Bookdesc = "A deep dive into the secrets of the human brain.", BookTitle = "Neural Pathways", BookAuthor = "Dr. Susan Keller", Action = "Available", NoOfPages = 410, BookLanaguage = "English" },
+new BookModel(){ Bookno = 104, Bookdesc = "A science fiction epic across galaxies and time.", BookTitle = "Stars Beyond Reach", BookAuthor = "J.T. Reynolds", Action = "Reserved", NoOfPages = 500, BookLanaguage = "English" },
+new BookModel(){ Bookno = 105, Bookdesc = "A gripping courtroom drama filled with unexpected twists.", BookTitle = "The Final Verdict", BookAuthor = "Lana Everett", Action = "Available", NoOfPages = 384, BookLanaguage = "English" },
+new BookModel(){ Bookno = 106, Bookdesc = "A poetic journey through love, loss, and self-discovery.", BookTitle = "Echoes of the Heart", BookAuthor = "Marcus Leone", Action = "Checked Out", NoOfPages = 210, BookLanaguage = "English" },
+new BookModel(){ Bookno = 107, Bookdesc = "An illustrated guide to mastering digital photography.", BookTitle = "The Shutter's Edge", BookAuthor = "Clara Mendez", Action = "Available", NoOfPages = 276, BookLanaguage = "English" },
+new BookModel(){ Bookno = 108, Bookdesc = "Historical insights into ancient civilizations of Asia.", BookTitle = "Dynasties of the East", BookAuthor = "Prof. Kenji Tanaka", Action = "Reserved", NoOfPages = 412, BookLanaguage = "Japanese" },
+new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rural hills of Spain.", BookTitle = "The Olive Tree Path", BookAuthor = "Sofia Ramirez", Action = "Available", NoOfPages = 330, BookLanaguage = "Spanish" }
+
 
             };
         }

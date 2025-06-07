@@ -1,5 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\pexels-dom-j-7304-45718.jpg
+wwwroot\img\pexels-pixabay-159866.jpg
+wwwroot\img\pexels-shawnreza-21120.jpg
 wwwroot\js\site.js
 wwwroot\lib\jquery\jquery.js
 wwwroot\lib\jquery\jquery.min.js
