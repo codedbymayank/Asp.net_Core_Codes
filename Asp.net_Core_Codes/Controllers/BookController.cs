@@ -21,6 +21,9 @@ namespace Asp.net_Core_Codes.Controllers
         public ViewResult GetAllBookDataById(int id)
         {
             var getallbookdatabyid = _bookrepo.GetBookById(id).ToList();
+            ViewBag.DataById = "Below data is of book no ";
+            //Here property type is anonymous 
+            ViewBag.bookid = new { id = 1000 };
             return View(getallbookdatabyid);
         }
 
