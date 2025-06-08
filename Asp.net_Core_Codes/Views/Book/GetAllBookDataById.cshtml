@@ -1,4 +1,4 @@
-﻿@model Asp.net_Core_Codes.Models.BookModel
+﻿@model IEnumerable<Asp.net_Core_Codes.Models.BookModel>
 
 
 <div class="container">
@@ -31,20 +31,24 @@
 
         <div class="col-md-6">
             
+            @foreach(var bookdata in Model)
+            {
                 <div class="book-details p-4">
-                    <h2 class="book-title">@Model.BookTitle</h2>
+                    <h2 class="book-title">@bookdata.BookTitle</h2>
                     <p class="book-description">
-                       @Model.Bookdesc
+                        @bookdata.Bookdesc
                     </p>
                     <a href="/read/the-great-adventure" class="btn btn-primary">Read Now</a>
                     <br />
-                <ul class="list-group" style="margin-top:20px !important;">
-                    <li class="list-group-item"><span class="font-weight-bold">Category - </span>@Model.Action</li>
-                    <li class="list-group-item"><span class="font-weight-bold">Total Pages - </span>@Model.NoOfPages</li>
-                    <li class="list-group-item"><span class="font-weight-bold">Languages - </span>@Model.BookLanaguage</li>
+                    <ul class="list-group" style="margin-top:20px !important;">
+                        <li class="list-group-item"><span class="font-weight-bold">Category - </span>@bookdata.Action</li>
+                        <li class="list-group-item"><span class="font-weight-bold">Total Pages - </span>@bookdata.NoOfPages</li>
+                        <li class="list-group-item"><span class="font-weight-bold">Languages - </span>@bookdata.BookLanaguage</li>
 
-                </ul>
-                </div> 
+                    </ul>
+                </div>
+            }
+               
         </div>
         <hr />
         

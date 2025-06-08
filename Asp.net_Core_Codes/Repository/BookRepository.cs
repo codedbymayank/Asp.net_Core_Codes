@@ -18,12 +18,12 @@ namespace Asp.net_Core_Codes.Repository
             }
         }
 
-        public BookModel GetBookById(int id)
+        public List<BookModel> GetBookById(int id)
         {
-            BookModel book = new BookModel();
+            List<BookModel> book = new List<BookModel>();
             try
             {
-                book = BookDataSource().Where(s=>s.Bookno == id).FirstOrDefault();
+                book = BookDataSource().Where(s=>s.Bookno == id).ToList();
                 return book;
             }
             catch(Exception ex)

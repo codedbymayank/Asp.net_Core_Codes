@@ -20,7 +20,7 @@ namespace Asp.net_Core_Codes.Controllers
         }
         public ViewResult GetAllBookDataById(int id)
         {
-            var getallbookdatabyid = _bookrepo.GetBookById(id);
+            var getallbookdatabyid = _bookrepo.GetBookById(id).ToList();
             return View(getallbookdatabyid);
         }
 
