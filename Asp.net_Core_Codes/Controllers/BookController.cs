@@ -16,6 +16,7 @@ namespace Asp.net_Core_Codes.Controllers
         public ViewResult GetAllBookData()
         {
             var getallbookdata = _bookrepo.GetAllBooks().ToList();
+            ViewData["BookData"] = "All Books Data";
             return View(getallbookdata);
         }
         public ViewResult GetAllBookDataById(int id)
