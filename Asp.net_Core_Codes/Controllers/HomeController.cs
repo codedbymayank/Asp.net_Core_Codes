@@ -20,9 +20,15 @@ namespace Asp.net_Core_Codes.Controllers
 
         }
 
-
+        //This is for viewdata attribute , After using viewdata over a property then this property will treated as a viewdata attribute 
+        [ViewData]
+        public string prop1 { get; set; }
+        [ViewData]
+        public string Title { get; set; }
         public ViewResult Index()
         {
+            prop1 = "Welcome To BookNest";
+            Title = "BookNest App";
             return View();
         }
         public ViewResult About()
