@@ -1,0 +1,34 @@
+﻿@model BookModel
+
+<div class="container">
+    <h3 class="display-4">Add New Book</h3>
+    @*Using asp-action because our action method name is different , not the same for which this view have been created *@
+    <form method="post" asp-action="SubmitBookData">
+        @*After using asp-for all property of above model will automatically availiable over here*@
+
+        <div class="form-group">
+            <label asp-for="BookTitle"></label>
+            <input asp-for="BookTitle" class="form-control" />
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="BookAuthor"></label>
+            <input asp-for="BookAuthor" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="NoOfPages"></label>
+            <input asp-for="NoOfPages" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Bookdesc"></label>
+            <textarea asp-for="Bookdesc" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Add Book" class="btn btn-primary"/>
+        </div>
+    </form>
+</div>

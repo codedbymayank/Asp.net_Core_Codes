@@ -34,5 +34,15 @@ namespace Asp.net_Core_Codes.Controllers
             return searchbookbynameandauthor;
         }
 
+        public ViewResult AddNewBook()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult SubmitBookData(BookModel bookdata)
+        {
+            return View();
+        }
     }
 }
