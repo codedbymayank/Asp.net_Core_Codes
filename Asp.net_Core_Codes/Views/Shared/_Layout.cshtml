@@ -19,9 +19,11 @@
                 <div class="navbar-nav" style="margin-left:187px !important">
                     <a class="navbar-brand" href="/">BookNest</a>
                     <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="/Home/About">About</a>
-                    <a class="nav-item nav-link" href="/Home/Contact">Contact</a>
-                    <a class="nav-item nav-link" href="/Book/GetAllBookData">All Books</a>
+                    <a class="nav-item nav-link" asp-controller="Home" asp-action="About">About</a>
+                    <a class="nav-item nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
+                    @*asp-route-id="" this id is a parameter , if there is some other parameter name , then u need to use that over here like asp-route-name=""*@
+                    @*If we have multiple parameter , then we can use asp-all-route-data=""*@
+                    <a class="nav-item nav-link" asp-controller="Book" asp-action="GetAllBookData" >All Books</a>
                 </div>
             </div>
         </nav>

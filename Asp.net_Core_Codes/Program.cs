@@ -30,7 +30,11 @@ app.UseStaticFiles();
 app.UseRouting();
 
 //For default controller route :- to map route our default home controller and default index method 
-app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
+app.UseEndpoints(endpoints => endpoints.MapControllerRoute
+(
+    name: "default",
+   pattern: "{controller=Home}/{action=Index}/{id?}")
+);
 
 //For creating custom middleware 
 //We are using async because asp.net core works on async programming
