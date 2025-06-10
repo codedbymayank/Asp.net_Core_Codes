@@ -1,8 +1,14 @@
+using Asp.net_Core_Codes.Asp.net_Core_Codes_Database;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+//To use our context file we neeed to do this
+builder.Services.AddDbContext<BookNestContext>(options => options.UseSqlServer("Server=.;Database=BookNest;Integrated Security=True;"));
 
 var app = builder.Build();
 
