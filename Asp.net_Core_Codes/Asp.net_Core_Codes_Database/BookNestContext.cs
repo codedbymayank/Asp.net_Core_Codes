@@ -15,12 +15,20 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
 
         // This is because to connect db with class which we have created 
         // Here we are overriding to configure this method
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
             /*Here we are getting sql server because we are using package for sql server*/
             // Integrated Security=True :- this is because we are using windows authentication
-        //    optionsBuilder.UseSqlServer("Server=.;Database=BookNest;Integrated Security=True;");
-        //    base.OnConfiguring(optionsBuilder);
-        //}
+            optionsBuilder.UseSqlServer("Server=.;Database=BookNest;Integrated Security=True;");
+            
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Book>().HasNoKey();
+        }
+
     }
+
 }
