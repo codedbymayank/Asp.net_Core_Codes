@@ -7,11 +7,16 @@ namespace Asp.net_Core_Codes.Controllers
 {
     public class BookController : Controller
     {
-        //Bascically to use a method of class which have into another class
+        //Basically to use a method of class which have into another class
         private readonly BookRepository _bookrepo =null;
-        public BookController()
+        public BookController(BookRepository book)
         {
-            _bookrepo = new BookRepository();
+            //acc to DI we should not create a instance of a class by using new keyword
+            //_bookrepo = new BookRepository();
+
+            //Dependency is created in program.cs class
+
+            _bookrepo = book;
         }
         public ViewResult GetAllBookData()
         {
@@ -36,12 +41,14 @@ namespace Asp.net_Core_Codes.Controllers
 
         public ViewResult AddNewBook()
         {
+
             return View();
         }
 
         [HttpPost]
         public ViewResult SubmitBookData(BookModel bookdata)
         {
+            _bookrepo.AddBookData(bookdata);
             return View();
         }
     }

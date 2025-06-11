@@ -24,10 +24,7 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
             base.OnConfiguring(optionsBuilder);
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Book>().HasNoKey();
-        }
+       
 
     }
 

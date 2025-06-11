@@ -1,9 +1,18 @@
-﻿using Asp.net_Core_Codes.Models;
+﻿using Asp.net_Core_Codes.Asp.net_Core_Codes_Database;
+using Asp.net_Core_Codes.Models;
 
 namespace Asp.net_Core_Codes.Repository
 {
     public class BookRepository
     {
+        //Entity framework with context class , that's why it needs to create a instance of context class
+        private readonly BookNestContext _context = null;
+
+        //Here we are using dependency injection
+        public BookRepository(BookNestContext context)
+        {
+            _context = context;
+        }
         public List<BookModel> GetAllBooks()
         {
             List<BookModel> books = new List<BookModel>();
@@ -62,6 +71,34 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
 
 
             };
+        }
+
+        public int AddBookData(BookModel book)
+        {
+            try
+            {
+                var data = new Book()
+                {
+                    Bookno = book.Bookno,
+                    Bookdesc = book.Bookdesc,
+                    BookTitle = book.BookTitle,
+                    BookAuthor = book.BookAuthor,
+                    Action = book.Action,
+                    NoOfPages = book.NoOfPages,
+                    CreatedDate = book.CreatedDate,
+                    UpdatedDate = book.UpdatedDate
+
+                };
+
+                //Here now we are mapping book with our context class
+                _context.Books.Add(data);
+                _context.SaveChanges();
+                return book.Bookno;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }

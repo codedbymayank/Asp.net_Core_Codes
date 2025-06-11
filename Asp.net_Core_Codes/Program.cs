@@ -1,4 +1,5 @@
 using Asp.net_Core_Codes.Asp.net_Core_Codes_Database;
+using Asp.net_Core_Codes.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,9 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<BookNestContext>(options => options.UseSqlServer("Data Source=DESKTOP-V1I2RVP\\SQLEXPRESS; Database=BookNest ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;"));
 ;
+//Here we rae directly using DI , because DI is inbuilt in asp.netcore
+//First we passed service and then implementation
+builder.Services.AddScoped<BookRepository , BookRepository>();
 
 var app = builder.Build();
 

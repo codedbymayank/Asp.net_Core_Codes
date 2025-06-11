@@ -24,37 +24,37 @@ namespace Asp.net_Core_Codes.Migrations
 
             modelBuilder.Entity("Asp.net_Core_Codes.Asp.net_Core_Codes_Database.Book", b =>
                 {
+                    b.Property<int>("Bookno")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Bookno"));
+
                     b.Property<string>("Action")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BookAuthor")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BookLanaguage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BookTitle")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bookdesc")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Bookno")
-                        .HasColumnType("int");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("NoOfPages")
+                    b.Property<int?>("NoOfPages")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
+
+                    b.HasKey("Bookno");
 
                     b.ToTable("Books");
                 });
