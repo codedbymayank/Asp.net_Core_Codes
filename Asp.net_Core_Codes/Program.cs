@@ -8,7 +8,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 //To use our context file we neeed to do this
-builder.Services.AddDbContext<BookNestContext>(options => options.UseSqlServer("Server=localhost;Database=BookNest;Trusted_Connection=True;TrustServerCertificate=True"));
+
+builder.Services.AddDbContext<BookNestContext>(options => options.UseSqlServer("Data Source=DESKTOP-V1I2RVP\\SQLEXPRESS; Database=BookNest ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;"));
+;
 
 var app = builder.Build();
 

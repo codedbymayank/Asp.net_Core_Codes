@@ -9,5 +9,8 @@
         public string Action { get; set; }
         public int NoOfPages { get; set; }
         public string BookLanaguage { get; set; }
+
+        public DateTime ? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
