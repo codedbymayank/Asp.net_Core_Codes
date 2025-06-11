@@ -73,27 +73,32 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
             };
         }
 
-        public int AddBookData(BookModel book)
+        public bool AddBookData(BookModel book)
         {
             try
             {
-                var data = new Book()
+                if(book!=null)
                 {
-                    Bookno = book.Bookno,
-                    Bookdesc = book.Bookdesc,
-                    BookTitle = book.BookTitle,
-                    BookAuthor = book.BookAuthor,
-                    Action = book.Action,
-                    NoOfPages = book.NoOfPages,
-                    CreatedDate = book.CreatedDate,
-                    UpdatedDate = book.UpdatedDate
+                    var data = new Book()
+                    {
+                        Bookno = book.Bookno,
+                        Bookdesc = book.Bookdesc,
+                        BookTitle = book.BookTitle,
+                        BookAuthor = book.BookAuthor,
+                        Action = book.Action,
+                        NoOfPages = book.NoOfPages,
+                        CreatedDate = book.CreatedDate,
+                        UpdatedDate = book.UpdatedDate
 
-                };
+                    };
 
-                //Here now we are mapping book with our context class
-                _context.Books.Add(data);
-                _context.SaveChanges();
-                return book.Bookno;
+                    //Here now we are mapping book with our context class
+                    _context.Books.Add(data);
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+                
             }
             catch(Exception ex)
             {

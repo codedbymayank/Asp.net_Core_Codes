@@ -39,16 +39,24 @@ namespace Asp.net_Core_Codes.Controllers
             return searchbookbynameandauthor;
         }
 
-        public ViewResult AddNewBook()
+        public ViewResult AddNewBook(bool IsSuccess = false)
         {
-
+            ViewBag.SuccessProp = IsSuccess;
             return View();
         }
 
         [HttpPost]
-        public ViewResult SubmitBookData(BookModel bookdata)
+        //If we are using IActionresult then we can return any type of data
+        public IActionResult AddNewBook(BookModel bookdata)
         {
-            _bookrepo.AddBookData(bookdata);
+           
+            if(_bookrepo.AddBookData(bookdata))
+            {
+                //return RedirectToAction("AddNewBook");
+                //OR
+                return RedirectToAction(nameof(AddNewBook) , new { IsSuccess = true}); // this method will get as a string because of nameof
+            }
+
             return View();
         }
     }

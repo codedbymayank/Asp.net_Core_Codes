@@ -2,8 +2,18 @@
 
 <div class="container">
     <h3 class="display-4">Add New Book</h3>
+    @if (ViewBag.SuccessProp == true)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Hi User</strong>Successfully Book Added
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    
     @*Using asp-action because our action method name is different , not the same for which this view have been created *@
-    <form method="post" asp-action="SubmitBookData">
+    <form method="post">
         @*After using asp-for all property of above model will automatically availiable over here*@
 
         <div class="form-group">
