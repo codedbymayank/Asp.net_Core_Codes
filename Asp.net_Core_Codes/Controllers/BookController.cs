@@ -49,14 +49,18 @@ namespace Asp.net_Core_Codes.Controllers
         //If we are using IActionresult then we can return any type of data
         public async Task<IActionResult> AddNewBook(BookModel bookdata)
         {
-           
-            if(await _bookrepo.AddBookData(bookdata))
+            //This will validate each field 
+           if(ModelState.IsValid)
             {
-                //return RedirectToAction("AddNewBook");
-                //OR
-                return RedirectToAction(nameof(AddNewBook) , new { IsSuccess = true}); // this method will get as a string because of nameof
+                if (await _bookrepo.AddBookData(bookdata))
+                {
+                    //return RedirectToAction("AddNewBook");
+                    //OR
+                    return RedirectToAction(nameof(AddNewBook), new { IsSuccess = true }); // this method will get as a string because of nameof
+                }
             }
 
+            ViewBag.SuccessProp = false;
             return View();
         }
     }
