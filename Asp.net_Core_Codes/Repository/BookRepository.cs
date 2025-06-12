@@ -1,5 +1,6 @@
 ﻿using Asp.net_Core_Codes.Asp.net_Core_Codes_Database;
 using Asp.net_Core_Codes.Models;
+using System.Threading.Tasks;
 
 namespace Asp.net_Core_Codes.Repository
 {
@@ -73,7 +74,8 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
             };
         }
 
-        public bool AddBookData(BookModel book)
+        //Here we are using async and task because of savechangesasync
+        public async Task<bool> AddBookData(BookModel book)
         {
             try
             {
@@ -93,8 +95,11 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
                     };
 
                     //Here now we are mapping book with our context class
-                    _context.Books.Add(data);
-                    _context.SaveChanges();
+                    await _context.Books.AddAsync(data);
+                    
+                    //Async is faster than normal one
+                    //Whenever we use async , at that time we need to use await
+                    await _context.SaveChangesAsync();
                     return true;
                 }
                 return false;

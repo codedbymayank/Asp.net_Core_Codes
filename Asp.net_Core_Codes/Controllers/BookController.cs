@@ -47,10 +47,10 @@ namespace Asp.net_Core_Codes.Controllers
 
         [HttpPost]
         //If we are using IActionresult then we can return any type of data
-        public IActionResult AddNewBook(BookModel bookdata)
+        public async Task<IActionResult> AddNewBook(BookModel bookdata)
         {
            
-            if(_bookrepo.AddBookData(bookdata))
+            if(await _bookrepo.AddBookData(bookdata))
             {
                 //return RedirectToAction("AddNewBook");
                 //OR
