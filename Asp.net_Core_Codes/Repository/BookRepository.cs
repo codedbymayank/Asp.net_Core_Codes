@@ -47,7 +47,21 @@ namespace Asp.net_Core_Codes.Repository
             List<BookModel> book = new List<BookModel>();
             try
             {
-                book = BookDataSource().Where(s=>s.Bookno == id).ToList();
+                var data = _context.Books.Where(s=>s.Bookno == id).ToList();
+                foreach(var bookdata in data)
+                {
+
+                    BookModel obj = new BookModel();
+                    obj.Action = bookdata.Action;
+                    obj.NoOfPages = Convert.ToInt32(bookdata.NoOfPages);
+                    obj.BookAuthor = bookdata.BookAuthor;
+                    obj.Bookdesc = bookdata.Bookdesc;
+                    obj.UpdatedDate = bookdata.UpdatedDate;
+                    obj.BookTitle = bookdata.BookTitle;
+                    obj.Bookno = bookdata.Bookno;
+                    obj.BookLanaguage = bookdata.BookLanaguage;
+                    book.Add(obj);
+                }
                 return book;
             }
             catch(Exception ex)
