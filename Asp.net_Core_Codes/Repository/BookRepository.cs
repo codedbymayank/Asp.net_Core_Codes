@@ -77,7 +77,7 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
         {
             try
             {
-                if(book!=null)
+                if(book.BookAuthor!=null)
                 {
                     var data = new Book()
                     {
