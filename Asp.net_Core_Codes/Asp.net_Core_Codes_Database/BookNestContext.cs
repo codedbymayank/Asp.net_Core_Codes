@@ -19,8 +19,11 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
         {
             /*Here we are getting sql server because we are using package for sql server*/
             // Integrated Security=True :- this is because we are using windows authentication
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-V1I2RVP\\SQLEXPRESS ; Database=BookNest ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;");
-            
+            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-V1I2RVP\\SQLEXPRESS ; Database=BookNest ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;");
+
+            //For Personal Laptop
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-HMU7HDG\\SQLEXPRESS ; Database=BookNest ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;");
+
             base.OnConfiguring(optionsBuilder);
         }
 

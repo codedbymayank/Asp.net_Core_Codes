@@ -46,6 +46,26 @@
         </div>
 
         <div class="form-group">
+            <label asp-for="BookLanaguage"></label>
+            <textarea asp-for="BookLanaguage" class="form-control"></textarea>
+            <span asp-validation-for="BookLanaguage" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CreatedDate"></label>
+            <input asp-for="CreatedDate" type="datetime-local" class="form-control" />
+            <span asp-validation-for="CreatedDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UpdatedDate"></label>
+            <input asp-for="UpdatedDate" type="datetime-local" class="form-control" />
+            <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
             <input type="submit" value="Add Book" class="btn btn-primary"/>
         </div>
     </form>
