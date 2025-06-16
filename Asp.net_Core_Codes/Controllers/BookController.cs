@@ -1,6 +1,7 @@
 ﻿using Asp.net_Core_Codes.Models;
 using Asp.net_Core_Codes.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 
 namespace Asp.net_Core_Codes.Controllers
@@ -42,6 +43,7 @@ namespace Asp.net_Core_Codes.Controllers
         public ViewResult AddNewBook(bool IsSuccess = false)
         {
             ViewBag.bookdesc = new List<string>() { "D1" , "D2" , "D3"};
+            ViewBag.BookDescrpt = new SelectList(GetDesc(), "Id", "Text");
             BookModel obj = new BookModel();
             obj.BookLanaguage = "Some Custom Lang";
             ViewBag.SuccessProp = IsSuccess;
@@ -63,11 +65,23 @@ namespace Asp.net_Core_Codes.Controllers
                     return RedirectToAction(nameof(AddNewBook), new { IsSuccess = true }); // this method will get as a string because of nameof
                 }
             }
-
+            // This we are doing for text and value 
+            ViewBag.BookDescrpt = new SelectList(GetDesc(), "Id", "Text");
             //Adding custom validation message , along with property validation message
             ModelState.AddModelError("","This is my custom message");
             ViewBag.SuccessProp = false;
             return View();
+        }
+
+        private List<DescModel> GetDesc()
+        {
+            return new List<DescModel> {
+               new DescModel() {Id = 10 , Text="Desc 1"},
+               new DescModel() {Id = 11 , Text="Desc 2"},
+               new DescModel() {Id = 12 , Text="Desc 3"},
+               new DescModel() {Id = 13 , Text="Desc 4"}
+
+           };
         }
     }
 }

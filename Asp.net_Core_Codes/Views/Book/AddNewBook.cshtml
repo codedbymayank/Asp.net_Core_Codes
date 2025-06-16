@@ -59,11 +59,11 @@
         <div class="form-group">
             <label asp-for="Bookdesc"></label>
             @*because of this asp-items tag optional will generate automatically*@
-            <select asp-for="Bookdesc" class="form-control" asp-items="new SelectList(@ViewBag.bookdesc, selecteddesc)"></select>
+            @* <select asp-for="Bookdesc" class="form-control" asp-items="new SelectList(@ViewBag.bookdesc, selecteddesc)"></select> *@
 
                 @*This is also possible to pass list when u are select list inside a method which is in controller*@
-            @* <select asp-for="Bookdesc" class="form-control" asp-items="@ViewBag.bookdesc">
-                </select>   *@ 
+            <select asp-for="Bookdesc" class="form-control" asp-items="@ViewBag.BookDescrpt">
+                </select>   
             <span asp-validation-for="Bookdesc" class="text-danger"></span>
 
         </div>
