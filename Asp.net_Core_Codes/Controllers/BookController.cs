@@ -67,6 +67,7 @@ namespace Asp.net_Core_Codes.Controllers
             }
             // This we are doing for text and value 
             ViewBag.BookDescrpt = new SelectList(GetDesc(), "Id", "Text");
+            //ViewBag.BookDescription = new SelectListItem
             //Adding custom validation message , along with property validation message
             ModelState.AddModelError("","This is my custom message");
             ViewBag.SuccessProp = false;
