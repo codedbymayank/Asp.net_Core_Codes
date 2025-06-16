@@ -41,18 +41,20 @@ namespace Asp.net_Core_Codes.Controllers
 
         public ViewResult AddNewBook(bool IsSuccess = false)
         {
+            ViewBag.bookdesc = new List<string>() { "D1" , "D2" , "D3"};
             BookModel obj = new BookModel();
             obj.BookLanaguage = "Some Custom Lang";
             ViewBag.SuccessProp = IsSuccess;
-            return View(obj);
+            return View();
         }
 
         [HttpPost]
         //If we are using IActionresult then we can return any type of data
         public async Task<IActionResult> AddNewBook(BookModel bookdata)
         {
+            ViewBag.bookdesc = new List<string>() { "D1", "D2", "D3" };
             //This will validate each field 
-           if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 if (await _bookrepo.AddBookData(bookdata))
                 {
