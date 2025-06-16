@@ -14,6 +14,15 @@
     
     @*Using asp-action because our action method name is different , not the same for which this view have been created *@
     <form method="post">
+        
+        @*For validation summary*@
+        @* <div asp-validation-summary="All" class="text-danger"> *@
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        @* <div asp-validation-summary="All" class="text-danger"> *@
+
+
+
+        </div>
         @*After using asp-for all property of above model will automatically availiable over here*@
 
         <div class="form-group">

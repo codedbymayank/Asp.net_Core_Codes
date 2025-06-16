@@ -6,14 +6,14 @@ namespace Asp.net_Core_Codes.Models
         public int Bookno { get; set; }
         //This is an attribute which is inbuilt inside dataannotation namespace 
         //Here we are adding our custom error message
-        //[Required(ErrorMessage ="Enter Book Description")]
-        //[StringLength(100)]
+        [Required(ErrorMessage = "Enter Book Description")]
+        [StringLength(100)]
         public string Bookdesc { get; set; }
         //[Required]
         public string BookTitle { get; set; }
-        //[Required]
+        [Required]
         //This for displaying our custom message on UI 
-        //[Display(Name ="Author Name")]
+        [Display(Name = "Author Name")]
         public string BookAuthor { get; set; }
         public string Action { get; set; }
        

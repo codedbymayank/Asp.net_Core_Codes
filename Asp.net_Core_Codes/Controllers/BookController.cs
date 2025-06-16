@@ -60,6 +60,8 @@ namespace Asp.net_Core_Codes.Controllers
                 }
             }
 
+            //Adding custom validation message , along with property validation message
+            ModelState.AddModelError("","This is my custom message");
             ViewBag.SuccessProp = false;
             return View();
         }
