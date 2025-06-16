@@ -3,6 +3,9 @@ namespace Asp.net_Core_Codes.Models
 {
     public class BookModel
     {
+        //Like DateTime there are multiple more datatypes which u can use 
+        [DataType(DataType.DateTime)]
+        public string CustomField { get; set; }
         public int Bookno { get; set; }
         //This is an attribute which is inbuilt inside dataannotation namespace 
         //Here we are adding our custom error message

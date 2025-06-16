@@ -25,6 +25,13 @@
         </div>
         @*After using asp-for all property of above model will automatically availiable over here*@
 
+         <div class="form-group">
+            <label asp-for="CustomField"></label>
+            <input asp-for="CustomField" class="form-control" />
+            @*To display validation error message*@
+            <span asp-validation-for="CustomField" class="text-danger"></span>
+        </div>
+
         <div class="form-group">
             <label asp-for="BookTitle"></label>
             <input asp-for="BookTitle" class="form-control" />
