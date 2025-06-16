@@ -21,7 +21,8 @@ namespace Asp.net_Core_Codes.Models
         public string Action { get; set; }
        
         public int NoOfPages { get; set; }
-       
+
+        [Display(Name ="Book Language")]
         public string BookLanaguage { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }

@@ -41,8 +41,10 @@ namespace Asp.net_Core_Codes.Controllers
 
         public ViewResult AddNewBook(bool IsSuccess = false)
         {
+            BookModel obj = new BookModel();
+            obj.BookLanaguage = "Some Custom Lang";
             ViewBag.SuccessProp = IsSuccess;
-            return View();
+            return View(obj);
         }
 
         [HttpPost]

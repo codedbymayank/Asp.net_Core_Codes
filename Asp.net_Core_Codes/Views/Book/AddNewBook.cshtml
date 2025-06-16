@@ -63,7 +63,15 @@
 
         <div class="form-group">
             <label asp-for="BookLanaguage"></label>
-            <textarea asp-for="BookLanaguage" class="form-control"></textarea>
+            @*This required is for html side validation*@
+            <select asp-for="BookLanaguage" class="form-control" required>
+                <option value=""></option>
+                <option>CPP</option>
+                <option>Java</option>
+                <option>Python</option>
+                @*After writing selected by default , It means this value will get selected bydefault*@
+                @* <option selected>Dotnet</option> *@
+            </select>
             <span asp-validation-for="BookLanaguage" class="text-danger"></span>
 
         </div>
