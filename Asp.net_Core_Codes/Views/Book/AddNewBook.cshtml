@@ -14,8 +14,14 @@
         </div>
     }
     
+    <div class="spinner-border" role="status" id="myloader" style="display:none">
+        <span class="sr-only">Loading...</span>
+    </div>
+
     @*Using asp-action because our action method name is different , not the same for which this view have been created *@
-    <form method="post">
+    @*By enabling this data-ajax="true" our form will work as a ajax*@
+    @*Basically now this work as a ajax form*@
+    <form method="post" data-ajax="true" data-ajax-complete="myComplete" data-ajax-success="successattribute" data-ajax-loading="#myloader">
         
         @*For validation summary*@
         @* <div asp-validation-summary="All" class="text-danger"> *@
@@ -25,6 +31,8 @@
 
 
         </div>
+
+        
         @*After using asp-for all property of above model will automatically availiable over here*@
 
          <div class="form-group">
@@ -102,3 +110,18 @@
         </div>
     </form>
 </div>
+
+@section jquerysec
+{
+    <script>
+        function myComplete()
+        {
+            alert("I am from complete function");
+        }
+        function successattribute()
+        {
+            alert("I am from success function");
+
+        }
+    </script>
+}
