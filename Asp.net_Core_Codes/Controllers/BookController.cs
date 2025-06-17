@@ -10,7 +10,10 @@ namespace Asp.net_Core_Codes.Controllers
     {
         //Basically to use a method of class which have into another class
         private readonly BookRepository _bookrepo =null;
-        public BookController(BookRepository book)
+        private readonly IWebHostEnvironment _webHostEnvironment = null;
+
+        //Here we are using Dependency Injection & asp.net core supports DI bydefault
+        public BookController(BookRepository book , IWebHostEnvironment webHostEnvironment)
         {
             //acc to DI we should not create a instance of a class by using new keyword
             //_bookrepo = new BookRepository();
@@ -18,6 +21,7 @@ namespace Asp.net_Core_Codes.Controllers
             //Dependency is created in program.cs class
 
             _bookrepo = book;
+            _webHostEnvironment = webHostEnvironment;
         }
         public ViewResult GetAllBookData()
         {
@@ -58,6 +62,11 @@ namespace Asp.net_Core_Codes.Controllers
             //This will validate each field 
             if (ModelState.IsValid)
             {
+                if(bookdata.ImageUrl!=null)
+                {
+                    string folder = "BookUploadImage/CoverImage";
+
+                }
                 if (await _bookrepo.AddBookData(bookdata))
                 {
                     //return RedirectToAction("AddNewBook");
