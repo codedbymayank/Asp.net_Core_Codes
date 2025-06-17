@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Asp.net_Core_Codes.Helper;
+using System.ComponentModel.DataAnnotations;
 namespace Asp.net_Core_Codes.Models
 {
     public class BookModel
@@ -13,6 +14,8 @@ namespace Asp.net_Core_Codes.Models
         [StringLength(100)]
         public string Bookdesc { get; set; }
         //[Required]
+        //Our Custom validation attribute
+        [MyCustomValidation]
         public string BookTitle { get; set; }
         [Required]
         //This for displaying our custom message on UI 
