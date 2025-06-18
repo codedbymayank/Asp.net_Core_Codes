@@ -9,7 +9,7 @@ namespace Asp.net_Core_Codes.Helper
             if(value!=null)
             {
                 string bookname = value.ToString();
-                if(bookname.Contains("php"))
+                if(bookname.Contains("DEMO"))
                 {
                     //Success is a static member , that's why we have only use class name 
                     return ValidationResult.Success;

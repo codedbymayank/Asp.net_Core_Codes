@@ -30,7 +30,7 @@ namespace Asp.net_Core_Codes.Models
         public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
 
-        [Required]
+        
         public IFormFile ImageUrl { get; set; }
     }
 }

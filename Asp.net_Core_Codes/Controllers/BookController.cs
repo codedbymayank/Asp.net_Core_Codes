@@ -65,6 +65,11 @@ namespace Asp.net_Core_Codes.Controllers
                 if(bookdata.ImageUrl!=null)
                 {
                     string folder = "BookUploadImage/CoverImage";
+                    //Here after adding guid , it will add some unique characters all time for all files
+                    folder += Guid.NewGuid().ToString() + '_' + bookdata.ImageUrl.FileName ;
+                    //webrootpath we are using to take a path of our local folder
+                    string serverfolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
+                   await bookdata.ImageUrl.CopyToAsync(new FileStream(serverfolder, FileMode.Create));
 
                 }
                 if (await _bookrepo.AddBookData(bookdata))
