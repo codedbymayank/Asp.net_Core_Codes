@@ -31,6 +31,7 @@ namespace Asp.net_Core_Codes.Repository
                     obj.BookTitle = bookdata.BookTitle;
                     obj.Bookno = bookdata.Bookno;
                     obj.BookLanaguage = bookdata.BookLanaguage;
+                    obj.ImgPath = bookdata.ImgPath;
                     books.Add(obj);
 
                 }
@@ -60,6 +61,8 @@ namespace Asp.net_Core_Codes.Repository
                     obj.BookTitle = bookdata.BookTitle;
                     obj.Bookno = bookdata.Bookno;
                     obj.BookLanaguage = bookdata.BookLanaguage;
+                    obj.ImgPath = bookdata.ImgPath;
+
                     book.Add(obj);
                 }
                 return book;
@@ -118,7 +121,9 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
                         Action = book.Action,
                         NoOfPages = book.NoOfPages,
                         CreatedDate = book.CreatedDate,
-                        UpdatedDate = book.UpdatedDate
+                        UpdatedDate = book.UpdatedDate,
+                        ImgPath = "/"+book.ImgPath
+                        
 
                     };
 

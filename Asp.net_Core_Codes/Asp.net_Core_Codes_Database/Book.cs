@@ -16,5 +16,6 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
 
         public DateTime ? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
+        public string ImgPath { get; set; }
     }
 }

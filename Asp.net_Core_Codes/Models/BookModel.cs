@@ -32,5 +32,7 @@ namespace Asp.net_Core_Codes.Models
 
         
         public IFormFile ImageUrl { get; set; }
+
+        public string ImgPath { get; set; }
     }
 }

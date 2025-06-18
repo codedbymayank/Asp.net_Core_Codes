@@ -48,6 +48,10 @@ namespace Asp.net_Core_Codes.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ImgPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("NoOfPages")
                         .HasColumnType("int");
 

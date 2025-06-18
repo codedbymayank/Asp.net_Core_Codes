@@ -60,9 +60,7 @@ namespace Asp.net_Core_Codes.Controllers
         {
             ViewBag.bookdesc = new List<string>() { "D1", "D2", "D3" };
             //This will validate each field 
-            if (ModelState.IsValid)
-            {
-                if(bookdata.ImageUrl!=null)
+             if(bookdata.ImageUrl!=null)
                 {
                     string folder = "BookUploadImage/CoverImage";
                     //Here after adding guid , it will add some unique characters all time for all files
@@ -70,7 +68,7 @@ namespace Asp.net_Core_Codes.Controllers
                     //webrootpath we are using to take a path of our local folder
                     string serverfolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
                    await bookdata.ImageUrl.CopyToAsync(new FileStream(serverfolder, FileMode.Create));
-
+                    bookdata.ImgPath = folder;
                 }
                 if (await _bookrepo.AddBookData(bookdata))
                 {
@@ -78,7 +76,7 @@ namespace Asp.net_Core_Codes.Controllers
                     //OR
                     return RedirectToAction(nameof(AddNewBook), new { IsSuccess = true }); // this method will get as a string because of nameof
                 }
-            }
+            
             // This we are doing for text and value 
             ViewBag.BookDescrpt = new SelectList(GetDesc(), "Id", "Text");
             //ViewBag.BookDescription = new SelectListItem
