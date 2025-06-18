@@ -1,5 +1,4 @@
-wwwroot\BookUploadImage\CoverImage33c886ee-99c6-4490-b665-0c3a825b9db5_something.jpg
-wwwroot\BookUploadImage\CoverImage7dc73d3a-9256-42de-bb83-635df1a1d54c_something.jpg
+wwwroot\BookUploadImage\CoverImage\99cec9a3-8a41-4b09-8693-573475c52af6_something.jpg
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\pexels-dom-j-7304-45718.jpg
@@ -340,5 +339,6 @@ wwwroot\lib\twitter-bootstrap\scss\_type.scss
 wwwroot\lib\twitter-bootstrap\scss\_utilities.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables-dark.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables.scss
-wwwroot\BookUploadImage\CoverImage72bc24b4-8a03-440d-9fdb-025ebcdccbd5_something.jpg
-wwwroot\BookUploadImage\CoverImageb4aa0f48-3572-4474-89ac-ed26b0969a94_something.jpg
+wwwroot\BookUploadImage\CoverImage\f344cafb-17a8-4d80-9ffc-f5e06e9e0771_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\gallery\23e4d04d-43c7-4604-890b-bd47122c6836_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\gallery\a55dbe73-9d4c-4eb6-97f7-a10921d778e1_something.jpg

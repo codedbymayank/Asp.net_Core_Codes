@@ -62,6 +62,48 @@ namespace Asp.net_Core_Codes.Migrations
 
                     b.ToTable("Books");
                 });
+
+            modelBuilder.Entity("Asp.net_Core_Codes.Asp.net_Core_Codes_Database.BookGallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("URL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("BookGallerys");
+                });
+
+            modelBuilder.Entity("Asp.net_Core_Codes.Asp.net_Core_Codes_Database.BookGallery", b =>
+                {
+                    b.HasOne("Asp.net_Core_Codes.Asp.net_Core_Codes_Database.Book", "Book")
+                        .WithMany("Gallery")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+                });
+
+            modelBuilder.Entity("Asp.net_Core_Codes.Asp.net_Core_Codes_Database.Book", b =>
+                {
+                    b.Navigation("Gallery");
+                });
 #pragma warning restore 612, 618
         }
     }

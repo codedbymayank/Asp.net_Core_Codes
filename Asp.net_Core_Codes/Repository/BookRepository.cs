@@ -127,6 +127,18 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
 
                     };
 
+                    var gallery = new List<BookGallery>();
+                    foreach(var item in book.galleryprop)
+                    {
+                        gallery.Add(new BookGallery()
+                        {
+                            Name = item.Name,
+                            URL = item.URL,
+                        });
+
+                    }
+                    data.Gallery = gallery;
+
                     //Here now we are mapping book with our context class
                     await _context.Books.AddAsync(data);
                     

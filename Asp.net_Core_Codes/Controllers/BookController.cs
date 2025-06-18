@@ -61,16 +61,28 @@ namespace Asp.net_Core_Codes.Controllers
             ViewBag.bookdesc = new List<string>() { "D1", "D2", "D3" };
             //This will validate each field 
              if(bookdata.ImageUrl!=null)
+            {
+                string folder = "BookUploadImage/CoverImage/";
+                bookdata.ImgPath = await UploadImage(folder , bookdata.ImageUrl);
+               
+            }
+            if (bookdata.GalleryFiles != null)
+            {
+                string folder = "BookUploadImage/gallery/";
+                bookdata.galleryprop = new List<GalleryModel>();
+                foreach(var gallerydata in bookdata.GalleryFiles)
                 {
-                    string folder = "BookUploadImage/CoverImage";
-                    //Here after adding guid , it will add some unique characters all time for all files
-                    folder += Guid.NewGuid().ToString() + '_' + bookdata.ImageUrl.FileName ;
-                    //webrootpath we are using to take a path of our local folder
-                    string serverfolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
-                   await bookdata.ImageUrl.CopyToAsync(new FileStream(serverfolder, FileMode.Create));
-                    bookdata.ImgPath = folder;
+                    var gallery = new GalleryModel()
+                    {
+                       Name = gallerydata.Name,
+                       URL = await UploadImage(folder, gallerydata)
+                    };
+                   bookdata.galleryprop.Add(gallery);
                 }
-                if (await _bookrepo.AddBookData(bookdata))
+               
+
+            }
+            if (await _bookrepo.AddBookData(bookdata))
                 {
                     //return RedirectToAction("AddNewBook");
                     //OR
@@ -84,6 +96,17 @@ namespace Asp.net_Core_Codes.Controllers
             ModelState.AddModelError("","This is my custom message");
             ViewBag.SuccessProp = false;
             return View();
+        }
+
+        private async Task<string> UploadImage(string folderpath , IFormFile file)
+        {
+           
+            //Here after adding guid , it will add some unique characters all time for all files
+            folderpath += Guid.NewGuid().ToString() + '_' + file.FileName;
+            //webrootpath we are using to take a path of our local folder
+            string serverfolder = Path.Combine(_webHostEnvironment.WebRootPath, folderpath);
+            await file.CopyToAsync(new FileStream(serverfolder, FileMode.Create));
+            return "/"+folderpath;
         }
 
         private List<DescModel> GetDesc()

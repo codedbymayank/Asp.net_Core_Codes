@@ -13,6 +13,8 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
         /*Name which we will give over here , table will get created with this name and columns are those which in Book.cs file*/
         public DbSet<Book> Books { get; set; }
 
+        public DbSet<BookGallery> BookGallerys { get; set; }
+
         // This is because to connect db with class which we have created 
         // Here we are overriding to configure this method
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
