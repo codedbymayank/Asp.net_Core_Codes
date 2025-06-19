@@ -7,16 +7,24 @@
         <div class="col-md-6">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    @{
+
+                        int i = 0;
                         
-                        <img class="d-block w-100" src="~/img/pexels-dom-j-7304-45718.jpg" alt="First slide" asp-append-version="true">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/img/pexels-pixabay-159866.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/img/pexels-shawnreza-21120.jpg" alt="Third slide">
-                    </div>
+                    }
+                    @foreach(var data in Model)
+                    {
+                        @foreach(var gallerydata in data.galleryprop)
+                        {
+                            <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
+
+                                <img class="d-block w-100" src="@gallerydata.URL" alt="First slide">
+                                @{i++;}
+                            </div>
+                        }
+                        
+                    }
+                    
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,4 +1,20 @@
+wwwroot\BookUploadImage\CoverImage\117a8d48-9df0-4594-9cba-a9c02c2bcb5b_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\CoverImage\12981af3-1f28-4296-9c0e-82aa931876c6_something.jpg
+wwwroot\BookUploadImage\CoverImage\2795b351-5bf4-4cc4-a217-5871b306af3c_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\CoverImage\99cec9a3-8a41-4b09-8693-573475c52af6_something.jpg
+wwwroot\BookUploadImage\CoverImage\c0c5aaf9-1cf0-483a-8346-78bddfe26bf9_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\CoverImage\f344cafb-17a8-4d80-9ffc-f5e06e9e0771_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\gallery\23e4d04d-43c7-4604-890b-bd47122c6836_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\gallery\2f31a3e4-7592-467d-88fc-3efdb5a2ad58_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\gallery\32d13ab3-c24c-4484-9c03-8409d5a7a778_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\gallery\3ffef7cd-049a-4eff-a7ec-4a895909a66f_something.jpg
+wwwroot\BookUploadImage\gallery\517cf6cb-fb9f-4f3c-af81-f4a484e8c7ba_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\gallery\a55dbe73-9d4c-4eb6-97f7-a10921d778e1_something.jpg
+wwwroot\BookUploadImage\gallery\c39328e6-81d0-4b47-85ff-4a6791c704bb_pexels-cottonbro-6214934.jpg
+wwwroot\BookUploadImage\gallery\cedac00f-8b93-416c-86f2-8805d154117b_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\gallery\dddcafe6-148b-48c5-94f7-e6a9a6b47efa_something.jpg
+wwwroot\BookUploadImage\gallery\e7885033-3fb1-49bd-be87-4f8c84a7ec16_something.jpg
+wwwroot\BookUploadImage\gallery\e90cb5ce-ccfa-4b42-80b1-60507b7ef039_pexels-ivo-rainha-527110-1290141.jpg
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\pexels-dom-j-7304-45718.jpg
@@ -339,6 +355,3 @@ wwwroot\lib\twitter-bootstrap\scss\_type.scss
 wwwroot\lib\twitter-bootstrap\scss\_utilities.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables-dark.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables.scss
-wwwroot\BookUploadImage\CoverImage\f344cafb-17a8-4d80-9ffc-f5e06e9e0771_pexels-cottonbro-6214934.jpg
-wwwroot\BookUploadImage\gallery\23e4d04d-43c7-4604-890b-bd47122c6836_pexels-ivo-rainha-527110-1290141.jpg
-wwwroot\BookUploadImage\gallery\a55dbe73-9d4c-4eb6-97f7-a10921d778e1_something.jpg

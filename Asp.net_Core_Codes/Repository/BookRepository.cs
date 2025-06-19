@@ -49,6 +49,8 @@ namespace Asp.net_Core_Codes.Repository
             try
             {
                 var data = _context.Books.Where(s=>s.Bookno == id).ToList();
+                var gallerydata = _context.BookGallerys.Where(s=>s.BookId == id).ToList();
+                int loop = 0;
                 foreach(var bookdata in data)
                 {
 
@@ -62,9 +64,24 @@ namespace Asp.net_Core_Codes.Repository
                     obj.Bookno = bookdata.Bookno;
                     obj.BookLanaguage = bookdata.BookLanaguage;
                     obj.ImgPath = bookdata.ImgPath;
-
+                    
+                    if(loop == 0 )
+                    {
+                        obj.galleryprop = new List<GalleryModel>();
+                        foreach (var galleryd in gallerydata)
+                        {
+                            GalleryModel gallery = new GalleryModel();
+                            gallery.Id = galleryd.Id;
+                            gallery.Name = galleryd.Name;
+                            gallery.URL = galleryd.URL;
+                            obj.galleryprop.Add(gallery);
+                            loop = 1;
+                        }
+                    }
                     book.Add(obj);
                 }
+
+
                 return book;
             }
             catch(Exception ex)
@@ -122,7 +139,7 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
                         NoOfPages = book.NoOfPages,
                         CreatedDate = book.CreatedDate,
                         UpdatedDate = book.UpdatedDate,
-                        ImgPath = "/"+book.ImgPath
+                        ImgPath = book.ImgPath
                         
 
                     };

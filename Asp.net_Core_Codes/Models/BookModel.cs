@@ -6,7 +6,7 @@ namespace Asp.net_Core_Codes.Models
     {
         //Like DateTime there are multiple more datatypes which u can use 
         [DataType(DataType.DateTime)]
-        public string CustomField { get; set; }
+        public string CustomField { get; set; } = Convert.ToString(DateTime.Today);
         public int Bookno { get; set; }
         //This is an attribute which is inbuilt inside dataannotation namespace 
         //Here we are adding our custom error message
@@ -27,10 +27,10 @@ namespace Asp.net_Core_Codes.Models
 
         [Display(Name ="Book Language")]
         public string BookLanaguage { get; set; }
-        public DateTime? CreatedDate { get; set; }
-        public DateTime? UpdatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; } = DateTime.Today;
+        public DateTime? UpdatedDate { get; set; } = DateTime.Today;
 
-        
+
         public IFormFile ImageUrl { get; set; }
 
         public string ImgPath { get; set; }
