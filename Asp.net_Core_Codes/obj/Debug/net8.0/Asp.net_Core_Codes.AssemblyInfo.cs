@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.net_Core_Codes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14e87658819b0e66b2c713bb288b7fb5de6dc24d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+402df92be3c8a0b9048320a94a7e7adc71913506")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.net_Core_Codes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.net_Core_Codes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
