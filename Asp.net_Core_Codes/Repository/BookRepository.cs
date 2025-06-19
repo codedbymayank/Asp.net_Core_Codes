@@ -64,7 +64,7 @@ namespace Asp.net_Core_Codes.Repository
                     obj.Bookno = bookdata.Bookno;
                     obj.BookLanaguage = bookdata.BookLanaguage;
                     obj.ImgPath = bookdata.ImgPath;
-                    
+                    obj.BookPdfUrl = bookdata.BookPdfUrl;
                     if(loop == 0 )
                     {
                         obj.galleryprop = new List<GalleryModel>();
@@ -139,7 +139,8 @@ new BookModel(){ Bookno = 109, Bookdesc = "A coming-of-age story set in the rura
                         NoOfPages = book.NoOfPages,
                         CreatedDate = book.CreatedDate,
                         UpdatedDate = book.UpdatedDate,
-                        ImgPath = book.ImgPath
+                        ImgPath = book.ImgPath,
+                        BookPdfUrl = book.BookPdfUrl,
                         
 
                     };

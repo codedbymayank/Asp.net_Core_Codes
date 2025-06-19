@@ -19,5 +19,7 @@ namespace Asp.net_Core_Codes.Asp.net_Core_Codes_Database
         public string ImgPath { get; set; }
 
         public List<BookGallery> Gallery { get; set; }
+
+        public string BookPdfUrl { get; set; }
     }
 }

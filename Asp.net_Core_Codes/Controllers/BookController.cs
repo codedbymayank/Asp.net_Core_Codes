@@ -82,6 +82,14 @@ namespace Asp.net_Core_Codes.Controllers
                
 
             }
+
+            if (bookdata.bookPdf != null)
+            {
+                string folder = "BookUploadImage/pdf/";
+                bookdata.BookPdfUrl = await UploadImage(folder, bookdata.bookPdf);
+
+            }
+
             if (await _bookrepo.AddBookData(bookdata))
                 {
                     //return RedirectToAction("AddNewBook");

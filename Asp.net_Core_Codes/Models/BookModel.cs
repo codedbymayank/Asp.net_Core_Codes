@@ -38,5 +38,8 @@ namespace Asp.net_Core_Codes.Models
         public IFormFileCollection GalleryFiles { get; set; }
 
         public List<GalleryModel> galleryprop { get; set; }
+
+        public IFormFile bookPdf { get; set; }
+        public string BookPdfUrl { get; set; }
     }
 }

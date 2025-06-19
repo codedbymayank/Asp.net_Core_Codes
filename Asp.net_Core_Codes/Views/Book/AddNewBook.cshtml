@@ -124,6 +124,16 @@
         </div>
 
         <div class="form-group">
+            <label asp-for="bookPdf"></label>
+            <div class="mb-3">
+                <input asp-for="bookPdf" class="form-label">
+
+            </div>
+            @*To display validation error message*@
+            <span asp-validation-for="bookPdf" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
             <input type="submit" value="Add Book" class="btn btn-primary"/>
         </div>
     </form>

@@ -39,6 +39,10 @@ namespace Asp.net_Core_Codes.Migrations
                     b.Property<string>("BookLanaguage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("BookPdfUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("BookTitle")
                         .HasColumnType("nvarchar(max)");
 
