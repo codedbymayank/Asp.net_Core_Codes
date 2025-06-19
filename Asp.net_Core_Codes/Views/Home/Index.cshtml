@@ -23,6 +23,12 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
        
+        @*First way to render View Component*@
+        @await Component.InvokeAsync("TopBooks")
+
+        @*Second way to render view component*@
+        <vc:TopBooks></vc:TopBooks>
+
         <!-- Card 1 -->
         <div class="col">
             <div class="card h-100">

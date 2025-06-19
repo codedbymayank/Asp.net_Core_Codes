@@ -1,3 +1,4 @@
+wwwroot\BookUploadImage\CoverImage\01df55a5-6a26-40de-98f6-526a17583ae4_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\CoverImage\117a8d48-9df0-4594-9cba-a9c02c2bcb5b_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\CoverImage\12981af3-1f28-4296-9c0e-82aa931876c6_something.jpg
 wwwroot\BookUploadImage\CoverImage\2795b351-5bf4-4cc4-a217-5871b306af3c_pexels-cottonbro-6214934.jpg
@@ -8,13 +9,17 @@ wwwroot\BookUploadImage\gallery\23e4d04d-43c7-4604-890b-bd47122c6836_pexels-ivo-
 wwwroot\BookUploadImage\gallery\2f31a3e4-7592-467d-88fc-3efdb5a2ad58_pexels-ivo-rainha-527110-1290141.jpg
 wwwroot\BookUploadImage\gallery\32d13ab3-c24c-4484-9c03-8409d5a7a778_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\gallery\3ffef7cd-049a-4eff-a7ec-4a895909a66f_something.jpg
+wwwroot\BookUploadImage\gallery\47a70c66-834c-43cb-b607-b64ef9d7011c_pexels-ivo-rainha-527110-1290141.jpg
 wwwroot\BookUploadImage\gallery\517cf6cb-fb9f-4f3c-af81-f4a484e8c7ba_pexels-ivo-rainha-527110-1290141.jpg
 wwwroot\BookUploadImage\gallery\a55dbe73-9d4c-4eb6-97f7-a10921d778e1_something.jpg
+wwwroot\BookUploadImage\gallery\a82b6088-13d9-4c66-a8e4-07a8f72f04a9_something.jpg
 wwwroot\BookUploadImage\gallery\c39328e6-81d0-4b47-85ff-4a6791c704bb_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\gallery\cedac00f-8b93-416c-86f2-8805d154117b_pexels-ivo-rainha-527110-1290141.jpg
 wwwroot\BookUploadImage\gallery\dddcafe6-148b-48c5-94f7-e6a9a6b47efa_something.jpg
+wwwroot\BookUploadImage\gallery\e6c7649e-b5b6-4d1d-9db9-7d3d8a8dacec_pexels-cottonbro-6214934.jpg
 wwwroot\BookUploadImage\gallery\e7885033-3fb1-49bd-be87-4f8c84a7ec16_something.jpg
 wwwroot\BookUploadImage\gallery\e90cb5ce-ccfa-4b42-80b1-60507b7ef039_pexels-ivo-rainha-527110-1290141.jpg
+wwwroot\BookUploadImage\pdf\098c54d7-99cb-4673-9091-7e5ea5b43c32_sample-local-pdf.pdf
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\pexels-dom-j-7304-45718.jpg
@@ -355,8 +360,3 @@ wwwroot\lib\twitter-bootstrap\scss\_type.scss
 wwwroot\lib\twitter-bootstrap\scss\_utilities.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables-dark.scss
 wwwroot\lib\twitter-bootstrap\scss\_variables.scss
-wwwroot\BookUploadImage\CoverImage\01df55a5-6a26-40de-98f6-526a17583ae4_pexels-cottonbro-6214934.jpg
-wwwroot\BookUploadImage\gallery\47a70c66-834c-43cb-b607-b64ef9d7011c_pexels-ivo-rainha-527110-1290141.jpg
-wwwroot\BookUploadImage\gallery\a82b6088-13d9-4c66-a8e4-07a8f72f04a9_something.jpg
-wwwroot\BookUploadImage\gallery\e6c7649e-b5b6-4d1d-9db9-7d3d8a8dacec_pexels-cottonbro-6214934.jpg
-wwwroot\BookUploadImage\pdf\098c54d7-99cb-4673-9091-7e5ea5b43c32_sample-local-pdf.pdf
