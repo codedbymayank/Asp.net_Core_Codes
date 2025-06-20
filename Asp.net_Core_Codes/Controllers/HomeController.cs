@@ -47,21 +47,36 @@ namespace Asp.net_Core_Codes.Controllers
 
         //Like in request there are two things verb and url 
         // So here is a verb
-        [HttpPost]
+        //[HttpPost]
         public ViewResult Contact()
         {
             return View();
         }
 
         //This is when we are using MapController() only
-        [Route("")]
+        //[Route("")]
 
         //Let suppose u have changed name of controller and action method in future then how to resolve this prob
-        [Route("[controller]/[action]")]
+        //[Route("[controller]/[action]")]
         //Automatically controller and action name will get replace and If above line we will write on controller level , then it will work automatically for all action method of this controller
         //If we use tilt then we can override this values from which aw are using on controller level
-        [Route("~/Somecontroller/methodname",Name ="something")]
+        //[Route("~/Somecontroller/methodname",Name ="something")]
         public ViewResult MapControllerMethod()
+        {
+            return View();
+        }
+
+        /* 
+         
+          If we are writing normally like this and instead of passing int , I will pass string then this will error 
+          
+          [Route("routecons/RouteConstraints/{Id}")
+
+           Instead of this we can do something like this and we can write as many as contraints we want
+           [Route("routecons/RouteConstraints/{Id:bool}")]
+         */
+        [Route("routecons/RouteConstraints/{Id:bool:float}")]
+        public ViewResult RouteConstraints(int ID)
         {
             return View();
         }
