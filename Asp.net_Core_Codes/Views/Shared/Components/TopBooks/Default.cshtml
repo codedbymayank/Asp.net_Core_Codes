@@ -1,1 +1,14 @@
-﻿<h1>I am from View Component cshtml file</h1>
+﻿@model IEnumerable<BookModel> ; 
+
+
+<div class="col">
+    @foreach(var bookdata in Model)
+    {
+        <div class="card h-100">
+        <partial name="_bookthumbnail" model="bookdata"></partial>
+        @* @Html.Partial("_bookthumbnail") *@
+       </div>
+    } 
+   
+</div>
+

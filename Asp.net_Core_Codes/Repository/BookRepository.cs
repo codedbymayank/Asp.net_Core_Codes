@@ -43,6 +43,35 @@ namespace Asp.net_Core_Codes.Repository
             }
         }
 
+        public async Task<List<BookModel>> GetTopBooksAsync()
+        {
+            List<BookModel> books = new List<BookModel>();
+            try
+            {
+                var data = _context.Books.ToList();
+                foreach (var bookdata in data)
+                {
+                    BookModel obj = new BookModel();
+                    obj.Action = bookdata.Action;
+                    obj.NoOfPages = Convert.ToInt32(bookdata.NoOfPages);
+                    obj.BookAuthor = bookdata.BookAuthor;
+                    obj.Bookdesc = bookdata.Bookdesc;
+                    obj.UpdatedDate = bookdata.UpdatedDate;
+                    obj.BookTitle = bookdata.BookTitle;
+                    obj.Bookno = bookdata.Bookno;
+                    obj.BookLanaguage = bookdata.BookLanaguage;
+                    obj.ImgPath = bookdata.ImgPath;
+                    books.Add(obj);
+
+                }
+                return books;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<BookModel> GetBookById(int id)
         {
             List<BookModel> book = new List<BookModel>();
