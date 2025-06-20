@@ -45,12 +45,22 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-//For default controller route :- to map route our default home controller and default index method 
-app.UseEndpoints(endpoints => endpoints.MapControllerRoute
+//For default controller route :- to map route our default home controller and default index method
+//app.UseEndpoints(endpoints => endpoints.MapControllerRoute 
+// OR
+app.MapControllerRoute
 (
     name: "default",
-   pattern: "{controller=Home}/{action=Index}/{id?}")
-);
+   // this pattern is also because when we run our application , then our first url be something like this 
+   // If something is written inside this {} , that means its going to replace with something 
+   //Here ? means that parameter value is optional
+   pattern: "{controller=Home}/{action=Index}/{id?}");
+   
+//When u wanna pass value , then at that time u have to use parameter name in url on browser and if not then no parameter name require
+
+//Even u can pass action name for bydefault and controller name 
+
+//That can be like this too :- pattern: "{action=Index}/{controller=Home}/{id?}"
 
 //For creating custom middleware 
 //We are using async because asp.net core works on async programming
@@ -69,8 +79,12 @@ app.UseEndpoints(endpoints => endpoints.MapControllerRoute
 
 app.UseAuthorization();
 
+//For setting up more routes
+
 //app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+//    name: "AboutUs",
+//    pattern: "about-us", -> With the help of this we can call AboutUs method in url on browser ( "about-us/{id?}" ( this is for parameter )
+//    default:  "{controller=Home}/{action=AboutUs}}"
+//    );
 
 app.Run();
