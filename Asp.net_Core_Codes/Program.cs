@@ -48,14 +48,14 @@ app.UseRouting();
 //For default controller route :- to map route our default home controller and default index method
 //app.UseEndpoints(endpoints => endpoints.MapControllerRoute 
 // OR
-app.MapControllerRoute
-(
-    name: "default",
-   // this pattern is also because when we run our application , then our first url be something like this 
-   // If something is written inside this {} , that means its going to replace with something 
-   //Here ? means that parameter value is optional
-   pattern: "{controller=Home}/{action=Index}/{id?}");
-   
+//app.MapControllerRoute
+//(
+//    name: "default",
+//    this pattern is also because when we run our application, then our first url be something like this
+//    If something is written inside this { } , that means its going to replace with something 
+//   Here ? means that parameter value is optional
+//   pattern: "{controller=Home}/{action=Index}/{id?}");
+
 //When u wanna pass value , then at that time u have to use parameter name in url on browser and if not then no parameter name require
 
 //Even u can pass action name for bydefault and controller name 
@@ -84,7 +84,10 @@ app.UseAuthorization();
 //app.MapControllerRoute(
 //    name: "AboutUs",
 //    pattern: "about-us", -> With the help of this we can call AboutUs method in url on browser ( "about-us/{id?}" ( this is for parameter )
-//    default:  "{controller=Home}/{action=AboutUs}}"
+//    default:  "{controller=Home}/{action=AboutUs}"
 //    );
 
+//This is for when we are not passing our default controller name and method name . And we are not using bydefault controller with action method then at that time we use this
+app.MapControllers();
+//And after this we write [Route=("")] in controller 
 app.Run();
